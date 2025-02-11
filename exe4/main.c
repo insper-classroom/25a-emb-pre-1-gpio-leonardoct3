@@ -47,6 +47,8 @@ int main() {
       sleep_ms(300);
 
       gpio_put(PIN_LED_Y, 0);
+      
+      while(!gpio_get(PIN_BTN_R)) {}
     }
   }
 }
